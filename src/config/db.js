@@ -3,7 +3,7 @@ const { mongoUri } = require('./env');
 
 module.exports = async () => {
   if (!mongoUri) {
-    throw new Error('❌ MONGO_URI is missing in .env');
+    throw new Error(' MONGO_URI is missing in .env');
   }
 
   await mongoose.connect(mongoUri, {
