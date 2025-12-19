@@ -19,7 +19,7 @@ async function seed() {
     }
 
     await Product.insertMany(products);
-    console.log('✅ Products seeded successfully');
+    console.log(' Products seeded successfully');
 
     process.exit(0);
   } catch (err) {
